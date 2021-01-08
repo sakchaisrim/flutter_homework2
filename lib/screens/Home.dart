@@ -23,8 +23,18 @@ class _HomePageState extends State<HomePage> {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(children: <Widget>[
-                  ReuseBox(),
-                  ReuseBox(),
+                  ReuseBox(
+                    txtMenu: 'OrdBog',
+                    color: Colors.teal,
+                    icon: Icons.book,
+                    onPress: () {print('Press OrdBog');},
+                  ),
+                  ReuseBox(
+                    txtMenu: 'About',
+                    color: Colors.green,
+                    icon: Icons.info,
+                    onPress: () {print('Press About');},
+                  ),
                 ]),
               ),
             ),
@@ -32,8 +42,18 @@ class _HomePageState extends State<HomePage> {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(children: <Widget>[
-                  ReuseBox(),
-                  ReuseBox(),
+                  ReuseBox(
+                    txtMenu: 'Service',
+                    color: Colors.orange,
+                    icon: Icons.security,
+                    onPress: () {print('Press Service');},
+                  ),
+                  ReuseBox(
+                    txtMenu: 'Products',
+                    color: Colors.brown,
+                    icon: Icons.timer,
+                    onPress: () {print('Press Products');},
+                  ),
                 ]),
               ),
             ),
@@ -41,8 +61,19 @@ class _HomePageState extends State<HomePage> {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(children: <Widget>[
-                  ReuseBox(),
-                  ReuseBox(),
+                  ReuseBox(
+                    txtMenu: 'Profile',
+                    color: Colors.pink,
+                    icon: Icons.person,
+                    onPress: () {print('Press Profile');},
+                  ),
+                  ReuseBox(
+                    txtMenu: 'Setting',
+                    color: Colors.blue,
+                    icon: Icons.settings,
+                    onPress: () {print('Press Setting');},
+
+                  ),
                 ]),
               ),
             ),
